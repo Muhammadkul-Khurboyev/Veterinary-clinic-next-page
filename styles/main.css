@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
 :root {
   --main-text-color: #333;
   --main-font-size: 16px;
@@ -284,8 +291,12 @@ img {
   line-height: 20px;
 }
 .contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  column-gap: 120px;
+  -webkit-column-gap: 120px;
+     -moz-column-gap: 120px;
+          column-gap: 120px;
   margin-left: 110px;
 }
 .locate-item {
@@ -297,7 +308,8 @@ img {
 }
 .locate__link {
   display: block;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   color: var(--main-text-color);
   font-size: var(--main-font-size);
   font-weight: var(--main-font-weight);
@@ -322,7 +334,8 @@ img {
 }
 .phone-item__link {
   display: block;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   color: var(--main-text-color);
   font-size: var(--main-font-size);
   font-weight: var(--main-font-weight);
@@ -343,6 +356,8 @@ img {
   font-weight: 700;
 }
 .search-me__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 100px;
 }
