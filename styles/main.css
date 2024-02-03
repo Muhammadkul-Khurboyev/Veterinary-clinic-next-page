@@ -5,6 +5,13 @@
 * Browsers: last 2 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
 :root {
   --main-text-color: #333;
   --main-font-size: 16px;
@@ -285,7 +292,7 @@ img {
 }
 .contact__desc {
   margin-top: 0;
-  margin-bottom: 117px;
+  margin-bottom: 167px;
   color: #949494;
   font-size: var(--main-font-size);
   line-height: 20px;
@@ -302,6 +309,15 @@ img {
 .locate-item {
   width: 153px;
 }
+.locate-item::before {
+  content: "";
+  width: 73px;
+  height: 73px;
+  padding-left: 75px;
+  padding-top: 53px;
+  background-image: url("../images/location.svg");
+  background-repeat: no-repeat;
+}
 .locate-item__addres {
   font-style: normal;
   margin-top: 30px;
@@ -315,7 +331,20 @@ img {
   font-weight: var(--main-font-weight);
 }
 .calendar-item {
+  position: relative;
   width: 137px;
+  padding-top: 51px;
+}
+.calendar-item::before {
+  content: "";
+  width: 73px;
+  height: 73px;
+  padding-left: 80px;
+  padding-top: 53px;
+  position: absolute;
+  top: -53px;
+  background-image: url("../images/calendar.svg");
+  background-repeat: no-repeat;
 }
 .calendar-item__img {
   margin-bottom: 27px;
@@ -327,7 +356,20 @@ img {
   font-weight: var(--main-font-weight);
 }
 .phone-item {
+  position: relative;
   width: 130px;
+  padding-top: 53px;
+}
+.phone-item::before {
+  content: "";
+  width: 73px;
+  height: 73px;
+  padding-left: 80px;
+  padding-top: 53px;
+  position: absolute;
+  top: -53px;
+  background-image: url("../images/phone.svg");
+  background-repeat: no-repeat;
 }
 .phone-item__img {
   margin-bottom: 27px;
@@ -341,9 +383,9 @@ img {
   font-weight: var(--main-font-weight);
 }
 .search-me {
-  background-image: url("../images/smiledog.png"),url("../images/groupbg.svg");
+  background-image: url("../images/groupbg.svg");
   background-repeat: no-repeat,no-repeat;
-  background-position: calc(50% - 483px) calc(50% - 277px),calc(50% + 170px) calc(50% - 362px);
+  background-position: calc(50% + 170px) calc(50% - 362px);
   padding-top: 220px;
   padding-bottom: 206px;
 }
@@ -358,8 +400,20 @@ img {
 .search-me__img {
   display: -webkit-box;
   display: -ms-flexbox;
+  position: relative;
   display: flex;
-  margin-left: 100px;
+  width: 1440px;
+  margin: 0 auto;
+}
+.search-me__img::before {
+  content: "";
+  width: 443px;
+  height: 342px;
+  background-image: url("../images/smiledog.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  top: -297px;
 }
 .site-footer {
   padding-top: 54px;
